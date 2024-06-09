@@ -11,7 +11,7 @@ public class ConnectorFactory {
 	static Connection con = null;
 	static String url = "jdbc:mysql://localhost:3306/employee";
 	static String unm = "root";
-	static String pwd = "saiprema@3343";
+	static String pwd = "root";
 	public static Connection requestConnection() throws ClassNotFoundException, SQLException {
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		con = DriverManager.getConnection(url, unm, pwd);
